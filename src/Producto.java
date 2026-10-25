@@ -19,12 +19,12 @@ public class Producto {
         System.out.println("Categoría: " + categoria);
     }
 
-    // Aplica un descuento al precio del producto
+    // Aplica un descuento porcentual y actualiza el precio del producto
     public void aplicarDescuento(double porcentaje) {
         precio = precio - (precio * porcentaje / 100);
     }
 
-    // Devuelve el precio actual del producto
+    // Devuelve el precio actual del producto después de los descuentos
     public double calcularPrecioFinal() {
         return precio;
     }
